@@ -1,0 +1,97 @@
+Graphical Abstract Creation Prompt
+
+-----------------------
+Objective:
+Create a graphical abstract as a 1536x1024 pixel (3:2 aspect ratio) image (JPG/PNG) that visually summarizes the key aspects of the given research paper, based only on the provided text file.
+
+IMPORTANT: The text file is the only source of content. The accompanying JPG images are style references only. Do not copy or adapt content from the example image.
+-----------------------
+Provided Files:
+1. Text file containing extracted content from the research paper
+  - Includes: Title, Authors & DOI, Published Year, Abstract, Methods, and Results
+2. JPG images:
+  - Template layout – for positioning and structural guide only
+  - Example image – for visual styling reference only (not for content reuse)
+
+-----------------------
+Workflow:
+1. Paper Analysis (Semi-automated – for user confirmation) – Extract the following elements from the provided text file (includes title, authors & DOI, published year, abstract, methods, and results only):
+1) Article Title
+2) Published Year
+3) Authors & DOI
+- Format for authors and DOI must be as follows:
+  - "Eur Radiol (PUBLISHED YEAR) Author1, Author2 et al.; DOI: [full DOI]"
+  - If there are more than 2 authors, list up to 2 author names, followed by “et al.”
+  - DOI must be placed on the next line, and should be clearly visible.
+4) Hypothesis / Research Question (1 short sentence)
+5) Methodology (brief flowchart or up to 3 bullet points, <6 words each)
+6) Visual element (graph, image, or illustration related to the research)
+- Create a new, medically accurate visual that effectively conveys the core clinical or scientific message of the paper.
+- The generated visual should summarize the central concept or result, as best understood from the available abstract, methods, and results sections (not just a single figure).
+- Do not include bar charts, line graphs, or statistical visualizations. Instead, present key numerical outcomes as clearly written text or labels.
+- Add contextual annotations for clarity when necessary:
+  - Use arrows, outlines, or brief labels to highlight key features or findings
+  - Keep labeling concise, relevant, and visually clean
+- Do not include decorative or abstract symbols—focus on clinical relevance and interpretability.
+- Avoid anatomical annotations unless essential for the clarity of the visual. Focus on illustrating the central message rather than depicting anatomical structures.
+7) Patient Cohort
+8) Modality / Organ
+9) Center Type (Single or Multi-center)
+10) Main Finding / Relevance Statement (1 sentence, <20 words)
+
+2: User Confirmation
+Present the extracted elements above to the user for review.
+Wait for explicit confirmation (e.g., “Looks good”, “Proceed”, or user edits).
+Only then proceed to graphical design.
+
+3. Graphical Abstract Design
+Create a 1536x1024 px landscape image that visually represents the research paper using European Radiology layout style, based on template JPG. Follow the layout structure and design guidelines below to ensure clarity, medical relevance, and visual professionalism.
+1) Layout Structure
+- All boxes (e.g., Methodology, Patient Cohort, Modality/Organ, Center type) must be arranged in a clearly structured grid.
+- Title and Hypothesis blocks should be horizontally centered at the top of the layout.
+- Left side: textual info blocks (Methodology, Cohort, Modality, Center type)
+- Right side: Visual element (graph, image, or illustration related to the research)
+- The visual element must be proportionally scaled and vertically centered in the right panel with adequate spacing.
+- The Patient Cohort, Modality/Organ, and Center Type boxes must be horizontally aligned in a single row with equal spacing.
+- The Main Finding should appear as a horizontally centered box or text line near the bottom of the layout, immediately above the footer.
+- Bottom footer (journal name, published year, authors, DOI) must be bottom-aligned and horizontally centered using smaller font size.
+  - The footer must follow this exact format structure: "Eur Radiol (PUBLISHED YEAR) Author1, Author2 et al.; DOI: [full DOI]"
+  - The published year must be enclosed in parentheses
+  - Include up to 2 author names followed by “et al.” if there are more than 2 authors.
+  - DOI must be preceded by “DOI:” and appear clearly on the next line.
+  - Both lines must be center-aligned and use a consistent small font.
+- The European Radiology logo must be horizontally aligned with the footer text and placed at the far right end of the same line (bottom right corner).
+- All elements must be:
+  - Horizontally and vertically aligned
+  - Uniform in size and spacing
+  - Evenly distributed with consistent padding/margins
+  - Visually balanced, with no overlap or clutter.
+
+2) Box Style
+- Use light blue rounded-outline boxes for each information unit.
+- All text must align vertically and horizontally within their containers.
+- Do not vary box sizes unless content length strictly requires it.
+
+3) Typography Style
+- Font: PP Neue Montreal
+- All text must be bold
+- Use blue for the Hypothesis text; black for all other text
+- Text must be centered vertically and horizontally within each box
+- Font size must be consistent across elements and fully legible on a 1536×1024 canvas (avoid small or crowded text)
+
+4) Visual Element
+- Recreate one key figure from the paper (may be AI-generated if conceptually accurate)
+- Maintain clinical and scientific accuracy
+- Use labeling for clarity when necessary
+  - Arrows, outlines, or brief labels can be used to highlight key features or findings, but avoid anatomical annotations unless essential.
+- Keep the visual medically relevant and professional
+
+5) European Radiology Logo  
+- The European Radiology logo must be horizontally aligned with the footer text and placed at the far right end of the same line.
+- It should be proportionally scaled and vertically aligned with the text  
+- Use a high-resolution version with clear margins  
+- Use a transparent or white-background logo to match the footer design
+
+-----------------------
+Final Deliverable:
+A professional, medical-scientific graphical abstract image (JPG/PNG, 1536x1024) that visually represents the methodology and findings of the provided research paper, with design adhering to the European Radiology graphical abstract style and layout clarity.

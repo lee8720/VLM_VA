@@ -1,0 +1,85 @@
+Graphical Abstract Creation Prompt
+
+-----------------------
+Objective:
+Create a graphical abstract as a 1536x1024 pixel (3:2 aspect ratio) image (JPG/PNG) that visually summarizes the key aspects of the given research paper, based only on the provided text file.
+
+IMPORTANT: The text file is the only source of content. The accompanying JPG images are style references only. Do not copy or adapt content from the example image.
+-----------------------
+Provided Files:
+1. Text file containing extracted content from the research paper
+  - Includes: Title, Authors & DOI, Published Year, Abstract, Methods, and Results
+2. JPG images:
+  - Template layout – for positioning and structural guide only
+  - Example image – for visual styling reference only (not for content reuse)
+
+-----------------------
+Workflow:
+1. Paper Analysis (Semi-automated – for user confirmation) - Extract the following elements from the text file (includes title, authors & DOI, published year, abstract, methods, and results only):
+1) Article Title
+- Use full title exactly as in the paper
+2) Authors, Published Date & DOI  
+- Use only the first author's last name and first initial, followed by “et al.”  
+- Format the author line as:  
+  LastName FirstInitial et al., Published: Month DD, YYYY  
+  https://doi.org/...
+- The part up to "Published:" should appear in bold, and the publication date and DOI in regular font.  
+- Ensure the bold and regular text appear on the same line, not separated.
+3) Key Results / Conclusions
+- Up to 3 bullet points summarizing main results or findings
+- Total word count: no more than 75 words across all bullet points
+4) Visual Element (Medical Image, Illustration, or Graphical Representation)
+- Create a new, medically accurate visual that effectively conveys the core clinical or scientific message of the paper.
+- The generated visual should summarize the central concept or result, as best understood from the available abstract, methods, and results sections (not just a single figure).
+- Do not include bar charts, line graphs, or statistical visualizations. Instead, present key numerical outcomes as clearly written text or labels.
+- Add contextual annotations for clarity when necessary:
+  - Use arrows, outlines, or brief labels to highlight key features or findings
+  - Keep labeling concise, relevant, and visually clean
+- Do not include decorative or abstract symbols—focus on clinical relevance and interpretability.
+- Avoid anatomical annotations unless essential for the clarity of the visual. Focus on illustrating the central message rather than depicting anatomical structures.
+
+2: User Confirmation
+Present the extracted elements above to the user for review.
+Wait for explicit confirmation (e.g., “Looks good”, “Proceed”, or user edits).
+Only then proceed to graphical design.
+
+3. Graphical Abstract Design
+Create a 1536x1024 px landscape image that visually represents the research paper using the Radiology (RSNA)-style graphical abstract format. Follow the layout structure and design guidelines below to ensure clarity, medical relevance, and visual professionalism.
+1) Layout Structure
+- Top Center: Article title (bold, blue, centered)
+- Left Side: Visual element based on a key figure from the paper
+- Right Side: Key results or conclusions (≤75 words, bullet points allowed)
+- Bottom Bar (Light Sky Blue #E8F0F2): Author line, publication date, DOI, and Radiology logo
+2) Image & Composition
+- Dimensions: Exactly 1536x1024 px, landscape format
+- Layout must follow RSNA structure (Title top, Visual left, Results right, Footer bottom)
+- Maintain ample white space; avoid grid boxes or icon-based blocks
+- Ensure a clean, balanced layout free from clutter
+3) Background
+- Main background: Pure white (#FFFFFF)
+- Bottom footer bar: Light sky blue (#E8F0F2), spanning the full image width
+4) Typography
+- Font: Open Sans
+- Title: Bold, #30549D, centered
+- Key Findings: SemiBold, black; use dark blue (#30549D) to highlight important numbers or clinical terms  
+- Bottom Bar Text:
+  - First line format: LastName FirstInitial et al., Published: Month DD, YYYY  
+    - The portion up to “Published:” should be bold  
+    - The date should appear in regular font, on the same line  
+  - Second line: DOI in regular font (e.g., https://doi.org/...)  
+  - All text should be black, legible at actual image size, and properly spaced
+5) Visual Element
+- Recreate one key figure from the paper (may be AI-generated if conceptually accurate)
+- Maintain clinical and scientific accuracy
+- Use labeling for clarity when necessary
+  - Arrows, outlines, or brief labels can be used to highlight key features or findings, but avoid anatomical annotations unless essential.
+- Keep the visual medically relevant and professional
+
+6) Radiology Logo  
+- The Radiology logo must be horizontally aligned with the footer text and placed at the far right end of the same line.
+- It should be proportionally scaled and vertically aligned with the text  
+- Use a high-resolution version with clear margins  
+- Use a transparent or white-background logo to match the footer design
+-----------------------
+Final Deliverable:
+A professional, medical-scientific graphical abstract image (JPG/PNG, 1536x1024) that visually communicates the study title, core findings, and one key figure, designed in accordance with the Radiology (RSNA) graphical abstract style and layout conventions.
